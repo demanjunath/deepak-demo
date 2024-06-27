@@ -370,7 +370,7 @@ footer {
 .footer-end {
   display: flex;
   justify-content: space-between;
-  height: 134px;
+  height: 80px;
   padding-top: 25px;
 }
 
