@@ -464,6 +464,11 @@ footer {
   }
 }
 
+.product-content {
+  padding-bottom: 300px;
+}
+
+
 @media screen and (max-width: 768px) {
   .product-content {
     height: 100px;

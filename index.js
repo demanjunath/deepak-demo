@@ -82,3 +82,18 @@ function filterAndRenderProducts(category, isChecked) {
   }
   renderProducts(filteredProducts);
 }
+
+function sortProductsByPrice(products, sortOrder) {
+  return products.sort((a, b) => {
+    if (sortOrder === "highest") {
+      return b.price - a.price;
+    } else if (sortOrder === "lowest") {
+      return a.price - b.price;
+    }
+  });
+}
+
+document.getElementById('price-filter').addEventListener('change', (event) => {
+    const sortedProducts = sortProductsByPrice(productsData, event.target.value);
+    renderProducts(sortedProducts);
+});
