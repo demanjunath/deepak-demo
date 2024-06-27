@@ -1,5 +1,4 @@
-import "./styles.css";
-import "./styles.css";
+
 
 let productsData = {};
 
